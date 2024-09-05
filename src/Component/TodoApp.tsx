@@ -8,10 +8,11 @@ const TodoApp = () => {
     const [todo, setTodo] = useState<TodoApp[]>([]);
     const [newTodo, setNewTodo] = useState('');
 
+
     const addTodo = () => {
         if (newTodo !== '') {
             const newId = crypto.randomUUID();
-            const newTodaItem = {
+            const newTodaItem =  {
                 id: newId,
                 name: newTodo
             };
